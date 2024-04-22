@@ -11,7 +11,7 @@ import "../styles/banners.scss";
 import { useEffect, useState } from "react";
 import { initAOS } from "../api/aos.js";
 import { NextSeo } from "next-seo";
-import { GTMHeadScript } from "../components/Gscripts";
+// import { GTMHeadScript } from "../components/Gscripts";
 import { useRouter } from "next/router";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
@@ -102,12 +102,12 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-        {/* <link rel="canonical" href={canonicalUrl} key="canonical" /> */}
+        <link rel="canonical" href={canonicalUrl} key="canonical" />
         <GTMHeadScript />
-      </Head>
+      </Head> */}
       <NextSeo
         title={String(metadata.title)}
         description={String(metadata.description)}
